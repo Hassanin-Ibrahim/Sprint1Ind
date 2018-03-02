@@ -16,7 +16,10 @@ var HassneanproductSchema = mongoose.Schema({
         type: Date,
         default: Date.now
     },
-    updatedAt: Date,
+    updatedAt: {
+        type: Date,
+        default: Date.now
+    },
     component: {
         type: String,
         required: false,
